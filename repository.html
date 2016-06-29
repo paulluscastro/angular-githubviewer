@@ -1,0 +1,51 @@
+<div ng-include="'navbar.html'"></div>
+
+<div class="container">
+  <div class="row card-panel hoverable">
+    <div class="col s12 center-align" ng-show="error">
+      <h1>{{error}}</h1>
+    </div>
+    <div class="col s12 center-align" ng-show="repository">
+      <h1>{{repository.name}}</h1>
+      <p>
+        {{repository.description}}
+      </p>
+    </div>
+    <div class="col s12" ng-show="repository">
+      <p>
+        <strong>Language: </strong> {{repository.language}} <br />
+        <strong>Forks: </strong> {{repository.forks}} <br />
+        <strong>Open Issues: </strong> {{repository.open_issues}} <br />
+        <strong>Watchers: </strong> {{repository.watchers}} <br />
+        <strong>Estrelas: </strong> {{repository.stargazers_count}} <br />
+      </p>
+    </div>
+  </div>
+
+  <div class="row" ng-show="repository">
+    <div class="col s12">
+      <h4><i class="material-icons">person</i> Contributors</h4>
+    </div>
+  </div>
+
+  <div class="row" ng-show="repository">
+    <div class="col s2 contributor" ng-repeat="contributor in contributors">
+      <div class="row">
+        <div class="col s6 offset-s3">
+          <a href="#/user/{{contributor.login}}"><img class="responsive-img circle z-depth-2" ng-src="{{contributor.avatar_url}}" alt="{{contributor.login}}" /></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 center-align">
+          <a href="#/user/{{contributor.login}}"><strong>{{contributor.login}}</strong></a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 light-green lighten-1 back-footer">
+        <p>
+          <a href="#/user/{{username}}"><i class="material-icons">account_box</i> Back to user</a>
+        </p>
+      </div>
+    </div>
+  </div>

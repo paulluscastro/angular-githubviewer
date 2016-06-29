@@ -1,0 +1,27 @@
+{
+  "name": "angular-getting-started",
+  "version": "1.0.0",
+  "description": "Study material for the Pluralsight's course 'Angular: Getting Started'. Due to CORS limitations on Google Chrome, I found it easier to create a small local Werbserver with Node JS.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://www.github.com/paulluscastro/angular-getting-started"
+  },
+  "keywords": [
+    "angular",
+    "beginner"
+  ],
+  "author": "Paullus Martins de Sousa Nava Castro",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.7",
+    "angular-route": "^1.5.7",
+    "express": "^4.14.0",
+    "jquery": "^3.0.0",
+    "materialize-css": "^0.97.6"
+  }
+}
