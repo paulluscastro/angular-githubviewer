@@ -13,7 +13,7 @@ The entire course is focused in Angular JS only, I made a few changes and added 
 
 ### How to test
 
-Download project's ZIP file and extract it or clone the repo locally in your computer. After that, using your favorite command-line tool, go to the project's folder and use npm to install dependencies ass follow:
+Download project's ZIP file and extract it or clone the repo locally in your computer. After that, using your favorite command-line tool, go to the project's folder and use npm to install dependencies as follows:
 
 ```
 npm install
